@@ -8,5 +8,5 @@
 import Foundation
 
 class APIConfig{
-    static let baseUrl = "http://54.213.3.105:3000/"
+    static let baseUrl = "http://54.213.3.105:3000"
 }
