@@ -11,6 +11,8 @@ class UserData{
     
     static let share = UserData()
     
+    var isSignin: Bool = false
+    
     func isSignined() -> Bool{
         return false
     }

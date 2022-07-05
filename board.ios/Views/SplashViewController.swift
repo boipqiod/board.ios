@@ -2,14 +2,8 @@ import Foundation
 import UIKit
 
 class SplashViewController: BaseViewController, SplashContract.View{
+    static func show(_ view: BaseViewController) {}
     
-    static func show(_ view: BaseViewController) {
-        let sb = UIStoryboard(name: "LaunchScreen", bundle: nil)
-        let vc = sb.instantiateViewController(withIdentifier: "splash")  as! SplashViewController
-
-        view.present(vc, animated: true)
-    }
-
     var presenter: SplashContract.Presenter!
     
     override func viewDidLoad() {

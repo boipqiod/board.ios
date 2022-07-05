@@ -8,43 +8,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
-        <scene sceneID="lSP-2u-WkU">
-            <objects>
-                <tableViewController id="lph-AO-dDJ" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="DdX-Ig-b5T">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <connections>
-                            <outlet property="dataSource" destination="lph-AO-dDJ" id="fFp-Hr-MXd"/>
-                            <outlet property="delegate" destination="lph-AO-dDJ" id="Wrg-Ul-3qc"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="q0o-Au-KRY">
-                        <barButtonItem key="leftBarButtonItem" title="Title" image="FORUMUS" id="2HO-Vh-Mce"/>
-                    </navigationItem>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qri-77-Y3T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-765.21739130434787" y="-674.33035714285711"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="FuJ-Ej-8iN">
-            <objects>
-                <navigationController id="9iK-yJ-X6U" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="geg-7X-ViE">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="lph-AO-dDJ" kind="relationship" relationship="rootViewController" id="vJe-4Y-1aC"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="h7k-gi-SXQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1609" y="-674"/>
-        </scene>
         <!--Splash View Controller-->
         <scene sceneID="HtQ-HO-J1s">
             <objects>
@@ -82,7 +45,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="FORUMUS" width="847" height="181"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
