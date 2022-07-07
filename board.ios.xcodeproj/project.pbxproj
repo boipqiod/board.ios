@@ -32,6 +32,8 @@
 		9B78FFC228746B7900F4677D /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B78FFC128746B7900F4677D /* MainTabViewController.swift */; };
 		9B78FFC428746B8D00F4677D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B78FFC328746B8D00F4677D /* MainViewController.swift */; };
 		9B78FFC82874728B00F4677D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B78FFC72874728B00F4677D /* SignUpViewController.swift */; };
+		9BD3B6C42877340100826836 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD3B6C32877340100826836 /* SignIn.swift */; };
+		9BD3B6C62877340A00826836 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD3B6C52877340A00826836 /* SignUp.swift */; };
 		AD5379BACE953640E68B45C3 /* Pods_board_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79CC2D5FC4C02027F1B84BCE /* Pods_board_ios.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +67,8 @@
 		9B78FFC128746B7900F4677D /* MainTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
 		9B78FFC328746B8D00F4677D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		9B78FFC72874728B00F4677D /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		9BD3B6C32877340100826836 /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
+		9BD3B6C52877340A00826836 /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
 		D14FB0550E6D8B7A37D3E181 /* Pods-board.ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-board.ios.release.xcconfig"; path = "Target Support Files/Pods-board.ios/Pods-board.ios.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,6 +137,8 @@
 			children = (
 				9B78FFAB2873069D00F4677D /* Contract.swift */,
 				9B78FFA92872FD8800F4677D /* Splash.swift */,
+				9BD3B6C32877340100826836 /* SignIn.swift */,
+				9BD3B6C52877340A00826836 /* SignUp.swift */,
 			);
 			name = Presenters;
 			path = Presenter;
@@ -333,7 +339,9 @@
 				9B78FFC228746B7900F4677D /* MainTabViewController.swift in Sources */,
 				9B78FFB328731CE000F4677D /* UserData.swift in Sources */,
 				9B78FFBE2874419200F4677D /* APIUser.swift in Sources */,
+				9BD3B6C62877340A00826836 /* SignUp.swift in Sources */,
 				9B2513F728748855004C3D89 /* BaseNavigationController.swift in Sources */,
+				9BD3B6C42877340100826836 /* SignIn.swift in Sources */,
 				2D4B4853285DC71200F0847F /* RequestModel.swift in Sources */,
 				2D4B4849285DC57C00F0847F /* APICommon.swift in Sources */,
 				2D4B4838285DB1AC00F0847F /* board_ios.xcdatamodeld in Sources */,

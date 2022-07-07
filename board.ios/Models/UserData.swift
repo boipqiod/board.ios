@@ -13,8 +13,17 @@ class UserData{
     
     var isSignin: Bool = false
     
+    var uid: Int?
+    var name: String?
+    var nickNmae: String?
+    var email: String?
+    
     func isSignined() -> Bool{
-        return false
+        guard let _ = uid else {
+            return false
+        }
+        
+        return true
     }
     
 }

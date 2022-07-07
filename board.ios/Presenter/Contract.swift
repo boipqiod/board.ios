@@ -26,6 +26,8 @@ struct SplashContract{
 }
 protocol SplashPresenter: BasePresenter{
     func initSplash()
+    
+    var view: SplashContract.View? { get set }
 }
 protocol SplashView: BaseView{
     
@@ -35,12 +37,35 @@ protocol SplashView: BaseView{
  로그인 뷰 인터페이스
  */
 struct SignInContract{
-    typealias View = SignView
+    typealias View = SignInView
     typealias Presenter = SignInPresenter
 }
 protocol SignInPresenter: BasePresenter{
-
+    func requestSignIn(email: String, password: String)
 }
-protocol SignView: BaseView{
+protocol SignInView: BaseView{
+    func responseSignIn(success: Bool)
     
+    var presenter: SignInContract.Presenter? { get set }
+}
+
+/**
+ 회원가입 뷰
+ */
+struct SignUpContract{
+    typealias View = SignUpView
+    typealias Presenter = SignUpPresenter
+}
+protocol SignUpPresenter: BasePresenter{
+    func requestSignUp(email: String, password: String, name: String, nickName: String)
+    func checkEmail(email: String)
+    func checkNickName(nickName: String)
+    
+    var view: SignUpContract.View? { get set }
+    
+}
+protocol SignUpView: BaseView{
+    func responseSignUp(success: Bool)
+    
+    var presenter: SignUpContract.Presenter? { get set }
 }

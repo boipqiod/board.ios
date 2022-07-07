@@ -16,16 +16,23 @@ class SignInViewController: BaseViewController, SignInContract.View{
     
     override func viewDidLoad() {
         
-    }
-    @IBAction func toSignUp(_ sender: Any) {
+        SignInImpl.setView(self)
         
-        guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "signUp") as? SignUpViewController else{
-            print("Aa")
-            return
+        //네비게이션바 삭제
+        self.navigationController?.navigationBar.isHidden = true
+        //키보드 설정
+        email.keyboardType = .emailAddress
+    }
+    
+    func responseSignIn(success: Bool) {
+        if success {
+            self.showToast(message: "로그인 성공.")
+            MainTabViewController.show(self)
+        } else {
+            self.showToast(message: "로그인 실패 \n 로그인 정보를 확인해 주세요.")
         }
-        self.navigationController?.pushViewController(vc, animated: true)
-        
     }
+    
     @IBAction func signin(_ sender: Any) {
         
         guard let email = self.email.text else { return }
@@ -36,25 +43,8 @@ class SignInViewController: BaseViewController, SignInContract.View{
             return
         }
         
-        API.share.requestSignIn(email: email, password: password) { (response: SignInResponse) in
-
-            if response.responseCode == 200{
-                self.showToast(message: "로그인 성공.")
-                MainTabViewController.show(self)
-            }else{
-                
-            }
-            
-            print("response \n \(response)")
-
-        }
+        presenter?.requestSignIn(email: email, password: password)
         
-//        var params: [String:Any] = [:]
-////        params["userId"] = Int(1)
-//
-//        API.share.request(APIConstant.share.GET_BOARD_LIST, params){(response : uid4NickNameRsponse) in
-//            print("response in vc\n \(response)")
-//        }
     }
     
 }

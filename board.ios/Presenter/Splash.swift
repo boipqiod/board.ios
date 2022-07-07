@@ -2,7 +2,6 @@ import Foundation
 
 
 class SplashImlp: SplashContract.Presenter {
-
     var view: SplashContract.View?
     
 
@@ -12,7 +11,9 @@ class SplashImlp: SplashContract.Presenter {
             
         }
         else {
-            SignInViewController.show(self.view as! BaseViewController)
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
+                SignInViewController.show(self.view as! BaseViewController)
+            }
         }
     }
     
