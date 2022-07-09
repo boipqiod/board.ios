@@ -3,6 +3,20 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "SignUpViewController.passwordBtn(_:):SignUpViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "passwordInput.text">
+            </PersistentString>
+            <PersistentString
+               value = "checkInput.text">
+            </PersistentString>
+            <PersistentString
+               value = "passwordInput.text != checkInput.text">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "closure #1 in API.test():APICommon.swift">
          <PersistentStrings>
             <PersistentString

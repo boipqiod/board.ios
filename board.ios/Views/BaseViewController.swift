@@ -27,7 +27,7 @@ class BaseViewController: UIViewController{
         
         self.view.addSubview(toastLabel)
         
-        UIView.animate(withDuration: 0.6, delay: 0.3, options: .curveEaseOut, animations: {
+        UIView.animate(withDuration: 0.6, delay: 1, options: .curveEaseOut, animations: {
                  toastLabel.alpha = 0.0
             }, completion: {(isCompleted) in
                 toastLabel.removeFromSuperview()
@@ -52,4 +52,23 @@ class BaseViewController: UIViewController{
 
         present(sheet, animated: true)
     }
+}
+
+
+extension BaseViewController{
+    
+    var signIn: SignInViewController{
+        get{
+            let vc = (self.storyboard?.instantiateViewController(withIdentifier: "signIn") as? SignInViewController)!
+            return vc
+        }
+    }
+    var signUp: SignUpViewController{
+        get{
+            let vc = (self.storyboard?.instantiateViewController(withIdentifier: "signUp") as? SignUpViewController)!
+            return vc
+        }
+    }
+    
+    
 }

@@ -15,8 +15,7 @@ class SignInViewController: BaseViewController, SignInContract.View{
     var presenter: SignInContract.Presenter?
     
     override func viewDidLoad() {
-        
-        SignInImpl.setView(self)
+        SignInImlp.setView(self)
         
         //네비게이션바 삭제
         self.navigationController?.navigationBar.isHidden = true
@@ -46,11 +45,21 @@ class SignInViewController: BaseViewController, SignInContract.View{
         presenter?.requestSignIn(email: email, password: password)
         
     }
+    @IBAction func toSignUp(_ sender: Any) {
+        let vc = self.signUp
+        vc.suerView = self
+        
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
     
 }
 extension SignInViewController{
     func setPresenter(_ presenter: BasePresenter) {
         self.presenter = presenter as? SignInContract.Presenter
+    }
+    
+    func _dismiss(){
+        self.dismiss(animated: true)
     }
     
     static func show(_ view: BaseViewController) {

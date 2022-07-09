@@ -188,10 +188,10 @@
                                             <action selector="emailBtn:" destination="OeK-ce-BUY" eventType="touchUpInside" id="7bA-Pc-PPc"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이미 사용중인 이메일입니다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wgk-ov-t0b">
-                                        <rect key="frame" x="70" y="96" width="146" height="16"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wgk-ov-t0b">
+                                        <rect key="frame" x="70" y="96" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" systemColor="systemRedColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아이디로 사용할 이메일을 입력해주세요." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ibk-ee-F6P">
@@ -240,26 +240,26 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyo-so-RKN">
-                                        <rect key="frame" x="70" y="150" width="274" height="40"/>
+                                        <rect key="frame" x="70" y="150" width="127" height="40"/>
                                         <color key="backgroundColor" red="0.56862745100000001" green="0.10980392160000001" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="nO7-05-0Xc"/>
                                         </constraints>
                                         <color key="tintColor" red="0.56862745100000001" green="0.10980392160000001" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="다음">
+                                        <buttonConfiguration key="configuration" style="filled" title="이전">
                                             <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="baseBackgroundColor" red="0.56862745100000001" green="0.10980392160000001" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="nameBtn:" destination="OeK-ce-BUY" eventType="touchUpInside" id="NXH-Ri-H9J"/>
+                                            <action selector="nameBackBtn:" destination="OeK-ce-BUY" eventType="touchUpInside" id="gYc-sz-Y91"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이미 사용중인 이메일입니다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rOw-jW-O0j">
-                                        <rect key="frame" x="70" y="114" width="146" height="16"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rOw-jW-O0j">
+                                        <rect key="frame" x="70" y="114" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" systemColor="systemRedColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RvN-bm-d9J">
@@ -276,20 +276,40 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WlJ-Kh-jTO">
+                                        <rect key="frame" x="217" y="150" width="127" height="40"/>
+                                        <color key="backgroundColor" red="0.56862745100000001" green="0.10980392160000001" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="YeX-UW-n7v"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.56862745100000001" green="0.10980392160000001" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="다음">
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" red="0.56862745100000001" green="0.10980392160000001" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="nameBtn:" destination="OeK-ce-BUY" eventType="touchUpInside" id="Ywc-7s-Smb"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="1lH-1h-Cjn"/>
+                                    <constraint firstItem="WlJ-Kh-jTO" firstAttribute="leading" secondItem="XI0-rv-jyD" secondAttribute="centerX" constant="10" id="B8F-md-pq4"/>
                                     <constraint firstItem="A7C-aS-Pcu" firstAttribute="centerX" secondItem="XI0-rv-jyD" secondAttribute="centerX" id="DuB-9F-jhg"/>
                                     <constraint firstItem="i1r-t4-h6V" firstAttribute="leading" secondItem="XI0-rv-jyD" secondAttribute="centerX" constant="10" id="GBU-Bp-S6z"/>
                                     <constraint firstItem="rOw-jW-O0j" firstAttribute="top" secondItem="RvN-bm-d9J" secondAttribute="bottom" constant="5" id="GHa-Oh-MNb"/>
                                     <constraint firstItem="i1r-t4-h6V" firstAttribute="top" secondItem="A7C-aS-Pcu" secondAttribute="bottom" constant="10" id="Lfc-NQ-f8E"/>
                                     <constraint firstItem="cyo-so-RKN" firstAttribute="leading" secondItem="XI0-rv-jyD" secondAttribute="leading" constant="70" id="OSZ-Hm-oSM"/>
-                                    <constraint firstAttribute="trailing" secondItem="cyo-so-RKN" secondAttribute="trailing" constant="70" id="Oap-7a-HFE"/>
+                                    <constraint firstAttribute="centerX" secondItem="cyo-so-RKN" secondAttribute="trailing" constant="10" id="Oap-7a-HFE"/>
+                                    <constraint firstAttribute="bottom" secondItem="WlJ-Kh-jTO" secondAttribute="bottom" constant="10" id="R6X-8Y-zGN"/>
                                     <constraint firstItem="Fuj-2X-GKZ" firstAttribute="leading" secondItem="XI0-rv-jyD" secondAttribute="leading" constant="70" id="RWf-6d-63D"/>
                                     <constraint firstAttribute="trailing" secondItem="ddH-O3-LdY" secondAttribute="trailing" constant="70" id="Une-UN-4YR"/>
                                     <constraint firstItem="RvN-bm-d9J" firstAttribute="leading" secondItem="Fuj-2X-GKZ" secondAttribute="leading" id="Yei-zw-nry"/>
                                     <constraint firstItem="A7C-aS-Pcu" firstAttribute="top" secondItem="XI0-rv-jyD" secondAttribute="top" constant="10" id="ZkE-OU-egl"/>
+                                    <constraint firstAttribute="trailing" secondItem="WlJ-Kh-jTO" secondAttribute="trailing" constant="70" id="aWq-Kj-KvE"/>
                                     <constraint firstAttribute="bottom" secondItem="cyo-so-RKN" secondAttribute="bottom" constant="10" id="awS-xJ-dtV"/>
                                     <constraint firstItem="ddH-O3-LdY" firstAttribute="top" secondItem="i1r-t4-h6V" secondAttribute="bottom" constant="10" id="ea2-w5-0EF"/>
                                     <constraint firstItem="RvN-bm-d9J" firstAttribute="top" secondItem="Fuj-2X-GKZ" secondAttribute="bottom" constant="10" id="ebo-8u-QI6"/>
@@ -308,7 +328,7 @@
                                             <constraint firstAttribute="height" constant="40" id="D2r-tx-LXY"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password check" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E5B-Xi-Bvm">
                                         <rect key="frame" x="70" y="81" width="274" height="40"/>
@@ -316,10 +336,10 @@
                                             <constraint firstAttribute="height" constant="40" id="LQx-6d-Ejh"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QKA-pr-Nwe">
-                                        <rect key="frame" x="70" y="150" width="274" height="40"/>
+                                        <rect key="frame" x="217" y="150" width="127" height="40"/>
                                         <color key="backgroundColor" red="0.56862745100000001" green="0.10980392160000001" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="vKB-kY-xsW"/>
@@ -335,10 +355,10 @@
                                             <action selector="passwordBtn:" destination="OeK-ce-BUY" eventType="touchUpInside" id="FUt-Gg-w5h"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이미 사용중인 이메일입니다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ifl-MH-qzZ">
-                                        <rect key="frame" x="70" y="126" width="146" height="16"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ifl-MH-qzZ">
+                                        <rect key="frame" x="70" y="126" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" systemColor="systemRedColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="사용할 비밀번호를 입력해 주세요." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Pw-dl-yq6">
@@ -347,6 +367,23 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jmm-3d-vU4">
+                                        <rect key="frame" x="70" y="150" width="127" height="40"/>
+                                        <color key="backgroundColor" red="0.56862745100000001" green="0.10980392160000001" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="ayq-Q9-eYE"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.56862745100000001" green="0.10980392160000001" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="이전">
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" red="0.56862745100000001" green="0.10980392160000001" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="passwordBackBtn:" destination="OeK-ce-BUY" eventType="touchUpInside" id="1TU-tR-rvg"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
@@ -355,15 +392,19 @@
                                     <constraint firstAttribute="height" constant="200" id="7es-kg-A2H"/>
                                     <constraint firstItem="E5B-Xi-Bvm" firstAttribute="top" secondItem="PGx-bW-tnO" secondAttribute="bottom" constant="10" id="8E7-Ci-VNw"/>
                                     <constraint firstItem="7Pw-dl-yq6" firstAttribute="top" secondItem="Dxa-n0-AxL" secondAttribute="top" constant="10" id="Aw2-tK-2IR"/>
+                                    <constraint firstItem="Jmm-3d-vU4" firstAttribute="leading" secondItem="Dxa-n0-AxL" secondAttribute="leading" constant="70" id="Dsr-nJ-Yfv"/>
                                     <constraint firstItem="E5B-Xi-Bvm" firstAttribute="leading" secondItem="Dxa-n0-AxL" secondAttribute="leading" constant="70" id="G6d-lZ-Xxs"/>
                                     <constraint firstItem="Ifl-MH-qzZ" firstAttribute="top" secondItem="E5B-Xi-Bvm" secondAttribute="bottom" constant="5" id="KHy-n5-yxu"/>
+                                    <constraint firstAttribute="bottom" secondItem="Jmm-3d-vU4" secondAttribute="bottom" constant="10" id="Ndt-GY-x8w"/>
                                     <constraint firstItem="7Pw-dl-yq6" firstAttribute="centerX" secondItem="Dxa-n0-AxL" secondAttribute="centerX" id="RqH-jP-NIE"/>
                                     <constraint firstItem="Ifl-MH-qzZ" firstAttribute="leading" secondItem="PGx-bW-tnO" secondAttribute="leading" id="S27-jo-mzh"/>
                                     <constraint firstItem="PGx-bW-tnO" firstAttribute="centerX" secondItem="Dxa-n0-AxL" secondAttribute="centerX" id="USP-Hq-hKl"/>
                                     <constraint firstItem="E5B-Xi-Bvm" firstAttribute="centerX" secondItem="Dxa-n0-AxL" secondAttribute="centerX" id="c3s-Lh-YBJ"/>
                                     <constraint firstItem="PGx-bW-tnO" firstAttribute="top" secondItem="7Pw-dl-yq6" secondAttribute="bottom" id="gNY-H2-dbM"/>
+                                    <constraint firstAttribute="centerX" secondItem="Jmm-3d-vU4" secondAttribute="trailing" constant="10" id="oMF-1X-3RK"/>
                                     <constraint firstAttribute="trailing" secondItem="QKA-pr-Nwe" secondAttribute="trailing" constant="70" id="oW0-RJ-DMm"/>
-                                    <constraint firstItem="QKA-pr-Nwe" firstAttribute="leading" secondItem="Dxa-n0-AxL" secondAttribute="leading" constant="70" id="xKD-me-VA2"/>
+                                    <constraint firstItem="QKA-pr-Nwe" firstAttribute="leading" secondItem="Dxa-n0-AxL" secondAttribute="centerX" constant="10" id="sQE-eN-owZ"/>
+                                    <constraint firstItem="QKA-pr-Nwe" firstAttribute="leading" secondItem="Dxa-n0-AxL" secondAttribute="centerX" constant="10" id="xKD-me-VA2"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -392,7 +433,8 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="emailCheckView" destination="XI0-rv-jyD" id="9Nx-Se-8np"/>
+                        <outlet property="checkInput" destination="E5B-Xi-Bvm" id="oC9-ip-IRW"/>
+                        <outlet property="emailCheckView" destination="M4x-V7-98u" id="2uq-go-GhY"/>
                         <outlet property="emailInput" destination="L64-cv-JEL" id="D5V-It-Rl3"/>
                         <outlet property="emailText" destination="Wgk-ov-t0b" id="YSl-Lh-4Hq"/>
                         <outlet property="inputNameView" destination="XI0-rv-jyD" id="6jE-4W-NQ4"/>
@@ -400,6 +442,7 @@
                         <outlet property="nickNameInput" destination="ddH-O3-LdY" id="eUj-5r-aeH"/>
                         <outlet property="nickNameText" destination="rOw-jW-O0j" id="x2i-A8-D6f"/>
                         <outlet property="passwordInput" destination="PGx-bW-tnO" id="Ajg-ln-SWq"/>
+                        <outlet property="passwordText" destination="Ifl-MH-qzZ" id="gq2-cE-rva"/>
                         <outlet property="passwordView" destination="Dxa-n0-AxL" id="jui-dC-9xn"/>
                     </connections>
                 </viewController>
@@ -437,6 +480,9 @@
         <image name="FORUMUS" width="847" height="181"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

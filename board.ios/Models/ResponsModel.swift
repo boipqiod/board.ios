@@ -18,6 +18,11 @@ struct APIResponse<T :Codable>: Codable{
     }
 }
 
+struct BaseResponse: Codable{
+    let responseCode: Int
+    let responseMsg: String
+}
+
 struct SignInResponse: Codable{
     let responseCode: Int
     let responseMsg: String
@@ -31,8 +36,29 @@ struct SignInResponse: Codable{
     }
 }
 
+struct SignUpResponse: Codable{
+    let responseCode: Int
+    let responseMsg: String
+    let userId: Int?
+}
+
 struct uid4NickNameRsponse: Codable{
     let responseCode: Int
     let responseMsg: String
     
+}
+
+struct BoardListResponse: Codable{
+    let responseCode: Int
+    let responseMsg: String
+    let boardList: [boardList]?
+    
+    struct boardList: Codable{
+        let boardId: Int
+        let title: String
+        let nickName: String
+        let date: Date
+        let views: Int
+        let commentCount: Int
+    }
 }

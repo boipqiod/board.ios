@@ -7,7 +7,7 @@
 
 import Foundation
 
-class SignInImpl: SignInContract.Presenter{
+class SignInImlp: SignInContract.Presenter{
     
     var view: SignInContract.View?
     
@@ -32,9 +32,9 @@ class SignInImpl: SignInContract.Presenter{
     }
 }
 
-extension SignInImpl{
+extension SignInImlp{
     static func setView(_ view: BaseView) {
-        let presenter = SignInImpl()
+        let presenter = SignInImlp()
         presenter.view = view as? SignInContract.View
         view.setPresenter(presenter as BasePresenter)
     }

@@ -11,19 +11,18 @@ class UserData{
     
     static let share = UserData()
     
-    var isSignin: Bool = false
+    var isSignin: Bool {
+        get{
+          return uid != nil
+        }
+    }
     
     var uid: Int?
     var name: String?
     var nickNmae: String?
     var email: String?
     
-    func isSignined() -> Bool{
-        guard let _ = uid else {
-            return false
-        }
+    func setUserData(email: String, password: String, name: String, nickName: String){
         
-        return true
     }
-    
 }

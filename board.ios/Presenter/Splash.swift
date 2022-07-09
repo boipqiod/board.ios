@@ -7,7 +7,7 @@ class SplashImlp: SplashContract.Presenter {
 
     func initSplash(){
 
-        if UserData.share.isSignined() {
+        if UserData.share.isSignin {
             
         }
         else {

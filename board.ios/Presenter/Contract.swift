@@ -57,9 +57,9 @@ struct SignUpContract{
     typealias Presenter = SignUpPresenter
 }
 protocol SignUpPresenter: BasePresenter{
-    func requestSignUp(email: String, password: String, name: String, nickName: String)
-    func checkEmail(email: String)
-    func checkNickName(nickName: String)
+    func requestSignUp(email: String, password: String, name: String, nickName: String, _ completion: @escaping (Bool) -> Void)
+    func checkEmail(email: String, _ completion: @escaping (Bool) -> Void)
+    func checkNickName(nickName: String, _ completion: @escaping (Bool) -> Void)
     
     var view: SignUpContract.View? { get set }
     
