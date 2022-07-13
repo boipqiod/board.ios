@@ -8,7 +8,9 @@ class SplashImlp: SplashContract.Presenter {
     func initSplash(){
 
         if UserData.share.isSignin {
-            
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
+                MainTabViewController.show(self.view as! BaseViewController)
+            }
         }
         else {
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {

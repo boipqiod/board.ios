@@ -13,7 +13,8 @@ class UserData{
     
     var isSignin: Bool {
         get{
-          return uid != nil
+//          return uid != nil
+            return true
         }
     }
     

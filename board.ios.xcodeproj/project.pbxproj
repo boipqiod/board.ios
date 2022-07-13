@@ -30,14 +30,15 @@
 		9B78FFBE2874419200F4677D /* APIUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B78FFBD2874419200F4677D /* APIUser.swift */; };
 		9B78FFC02874422800F4677D /* MainTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B78FFBF2874422800F4677D /* MainTab.storyboard */; };
 		9B78FFC228746B7900F4677D /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B78FFC128746B7900F4677D /* MainTabViewController.swift */; };
-		9B78FFC428746B8D00F4677D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B78FFC328746B8D00F4677D /* MainViewController.swift */; };
+		9B78FFC428746B8D00F4677D /* MainListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B78FFC328746B8D00F4677D /* MainListViewController.swift */; };
 		9B78FFC82874728B00F4677D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B78FFC72874728B00F4677D /* SignUpViewController.swift */; };
 		9BD3B6C42877340100826836 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD3B6C32877340100826836 /* SignIn.swift */; };
 		9BD3B6C62877340A00826836 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD3B6C52877340A00826836 /* SignUp.swift */; };
 		9BD3B6C9287979CA00826836 /* APIBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD3B6C8287979CA00826836 /* APIBoard.swift */; };
-		9BD3B6CC287C4FC300826836 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD3B6CB287C4FC300826836 /* Main.swift */; };
+		9BD3B6CC287C4FC300826836 /* MainList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD3B6CB287C4FC300826836 /* MainList.swift */; };
 		9BD3B6CE287C50A900826836 /* MainList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BD3B6CD287C50A900826836 /* MainList.storyboard */; };
-		9BD3B6D1287C69C500826836 /* BoadListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BD3B6D0287C69C500826836 /* BoadListCell.xib */; };
+		9BD3B6D3287EFED800826836 /* BoardListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD3B6D2287EFED800826836 /* BoardListCell.swift */; };
+		9BD3B6D5287F1BD800826836 /* BoadListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BD3B6D0287C69C500826836 /* BoadListCell.xib */; };
 		AD5379BACE953640E68B45C3 /* Pods_board_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79CC2D5FC4C02027F1B84BCE /* Pods_board_ios.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,14 +70,15 @@
 		9B78FFBD2874419200F4677D /* APIUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIUser.swift; sourceTree = "<group>"; };
 		9B78FFBF2874422800F4677D /* MainTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainTab.storyboard; sourceTree = "<group>"; };
 		9B78FFC128746B7900F4677D /* MainTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
-		9B78FFC328746B8D00F4677D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		9B78FFC328746B8D00F4677D /* MainListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListViewController.swift; sourceTree = "<group>"; };
 		9B78FFC72874728B00F4677D /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		9BD3B6C32877340100826836 /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
 		9BD3B6C52877340A00826836 /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
 		9BD3B6C8287979CA00826836 /* APIBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIBoard.swift; sourceTree = "<group>"; };
-		9BD3B6CB287C4FC300826836 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		9BD3B6CB287C4FC300826836 /* MainList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainList.swift; sourceTree = "<group>"; };
 		9BD3B6CD287C50A900826836 /* MainList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainList.storyboard; sourceTree = "<group>"; };
 		9BD3B6D0287C69C500826836 /* BoadListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BoadListCell.xib; sourceTree = "<group>"; };
+		9BD3B6D2287EFED800826836 /* BoardListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardListCell.swift; sourceTree = "<group>"; };
 		D14FB0550E6D8B7A37D3E181 /* Pods-board.ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-board.ios.release.xcconfig"; path = "Target Support Files/Pods-board.ios/Pods-board.ios.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -195,10 +197,12 @@
 		9B2513F228747FC9004C3D89 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				9BD3B6D0287C69C500826836 /* BoadListCell.xib */,
+				9BD3B6D2287EFED800826836 /* BoardListCell.swift */,
 				9BD3B6CF287C590A00826836 /* Item */,
 				9B78FFBF2874422800F4677D /* MainTab.storyboard */,
 				9B78FFC128746B7900F4677D /* MainTabViewController.swift */,
-				9B78FFC328746B8D00F4677D /* MainViewController.swift */,
+				9B78FFC328746B8D00F4677D /* MainListViewController.swift */,
 				9BD3B6CD287C50A900826836 /* MainList.storyboard */,
 			);
 			path = Main;
@@ -234,7 +238,7 @@
 		9BD3B6CA287C4FAF00826836 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				9BD3B6CB287C4FC300826836 /* Main.swift */,
+				9BD3B6CB287C4FC300826836 /* MainList.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -242,7 +246,6 @@
 		9BD3B6CF287C590A00826836 /* Item */ = {
 			isa = PBXGroup;
 			children = (
-				9BD3B6D0287C69C500826836 /* BoadListCell.xib */,
 			);
 			path = Item;
 			sourceTree = "<group>";
@@ -316,11 +319,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B78FFB028731B0A00F4677D /* Sign.storyboard in Resources */,
+				9BD3B6D5287F1BD800826836 /* BoadListCell.xib in Resources */,
 				9B78FFC02874422800F4677D /* MainTab.storyboard in Resources */,
 				2D4B483D285DB1B800F0847F /* LaunchScreen.storyboard in Resources */,
 				9BD3B6CE287C50A900826836 /* MainList.storyboard in Resources */,
 				2D4B483A285DB1B800F0847F /* Assets.xcassets in Resources */,
-				9BD3B6D1287C69C500826836 /* BoadListCell.xib in Resources */,
 				2D4B4835285DB1AC00F0847F /* Splash.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -392,10 +395,11 @@
 				2D4B482E285DB1AC00F0847F /* AppDelegate.swift in Sources */,
 				9B78FFB52873226A00F4677D /* SignInViewController.swift in Sources */,
 				2D4B4830285DB1AC00F0847F /* SceneDelegate.swift in Sources */,
-				9BD3B6CC287C4FC300826836 /* Main.swift in Sources */,
+				9BD3B6CC287C4FC300826836 /* MainList.swift in Sources */,
 				2D4B485D285DD46A00F0847F /* SplashViewController.swift in Sources */,
-				9B78FFC428746B8D00F4677D /* MainViewController.swift in Sources */,
+				9B78FFC428746B8D00F4677D /* MainListViewController.swift in Sources */,
 				9B78FFAA2872FD8800F4677D /* Splash.swift in Sources */,
+				9BD3B6D3287EFED800826836 /* BoardListCell.swift in Sources */,
 				9BD3B6C9287979CA00826836 /* APIBoard.swift in Sources */,
 				9B78FFAC2873069D00F4677D /* Contract.swift in Sources */,
 			);
