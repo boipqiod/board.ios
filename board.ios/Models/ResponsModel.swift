@@ -59,7 +59,7 @@ struct BoardListResponse: Codable{
         let content: String
         let category: String
         let nickName: String
-//        let date: Date
+        let date: String
         let views: Int
         let commentCount: Int
     }

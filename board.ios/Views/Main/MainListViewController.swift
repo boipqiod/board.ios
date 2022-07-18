@@ -12,12 +12,7 @@ class MainListViewController: BaseViewController, MainListContract.View{
     
     var presenter: MainListPresenter?
     var respnse: BoardListResponse?
-    @IBOutlet weak var tableView: UITableView!{
-        didSet{
-            BoardListCell.register(tableView)
-        }
-    }
-    
+    @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         MainListImlp.setView(self)
         presenter?.requestMainList(page: 1)
@@ -41,10 +36,10 @@ extension MainListViewController: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as? BoardListCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "BoardListCell", for: indexPath) as? BoardListCell
         cell?.setListData(respnse?.boardList?[indexPath.row])
 
-        print(cell?.Title.text)
+//        print(cell?.Title)
         
         return cell ?? UITableViewCell()
     }

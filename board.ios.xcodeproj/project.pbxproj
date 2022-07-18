@@ -39,6 +39,14 @@
 		9BD3B6CE287C50A900826836 /* MainList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BD3B6CD287C50A900826836 /* MainList.storyboard */; };
 		9BD3B6D3287EFED800826836 /* BoardListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD3B6D2287EFED800826836 /* BoardListCell.swift */; };
 		9BD3B6D5287F1BD800826836 /* BoadListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BD3B6D0287C69C500826836 /* BoadListCell.xib */; };
+		9BD3B6D82885A6FF00826836 /* BoardDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BD3B6D72885A6FF00826836 /* BoardDetail.storyboard */; };
+		9BD3B6DA2885A70E00826836 /* BoardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD3B6D92885A70E00826836 /* BoardDetailViewController.swift */; };
+		9BD3B6DC2885A75500826836 /* NewPost.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BD3B6DB2885A75500826836 /* NewPost.storyboard */; };
+		9BD3B6DE2885A76600826836 /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD3B6DD2885A76600826836 /* NewPostViewController.swift */; };
+		9BD3B6E12885A78900826836 /* BoardDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD3B6E02885A78900826836 /* BoardDetail.swift */; };
+		9BD3B6E32885A79B00826836 /* NewPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD3B6E22885A79B00826836 /* NewPost.swift */; };
+		9BD3B6E52885A7BF00826836 /* CategoryList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BD3B6E42885A7BF00826836 /* CategoryList.storyboard */; };
+		9BD3B6E72885A7CA00826836 /* CategoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD3B6E62885A7CA00826836 /* CategoryListView.swift */; };
 		AD5379BACE953640E68B45C3 /* Pods_board_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79CC2D5FC4C02027F1B84BCE /* Pods_board_ios.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +87,14 @@
 		9BD3B6CD287C50A900826836 /* MainList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainList.storyboard; sourceTree = "<group>"; };
 		9BD3B6D0287C69C500826836 /* BoadListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BoadListCell.xib; sourceTree = "<group>"; };
 		9BD3B6D2287EFED800826836 /* BoardListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardListCell.swift; sourceTree = "<group>"; };
+		9BD3B6D72885A6FF00826836 /* BoardDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BoardDetail.storyboard; sourceTree = "<group>"; };
+		9BD3B6D92885A70E00826836 /* BoardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardDetailViewController.swift; sourceTree = "<group>"; };
+		9BD3B6DB2885A75500826836 /* NewPost.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewPost.storyboard; sourceTree = "<group>"; };
+		9BD3B6DD2885A76600826836 /* NewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
+		9BD3B6E02885A78900826836 /* BoardDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardDetail.swift; sourceTree = "<group>"; };
+		9BD3B6E22885A79B00826836 /* NewPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPost.swift; sourceTree = "<group>"; };
+		9BD3B6E42885A7BF00826836 /* CategoryList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CategoryList.storyboard; sourceTree = "<group>"; };
+		9BD3B6E62885A7CA00826836 /* CategoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListView.swift; sourceTree = "<group>"; };
 		D14FB0550E6D8B7A37D3E181 /* Pods-board.ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-board.ios.release.xcconfig"; path = "Target Support Files/Pods-board.ios/Pods-board.ios.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -148,6 +164,7 @@
 				9B78FFAB2873069D00F4677D /* Contract.swift */,
 				9B78FFA92872FD8800F4677D /* Splash.swift */,
 				9BD3B6CA287C4FAF00826836 /* Main */,
+				9BD3B6DF2885A77000826836 /* Board */,
 				9BD3B6C7287964EE00826836 /* Auth */,
 			);
 			name = Presenters;
@@ -162,6 +179,7 @@
 				2D4B4833285DB1AC00F0847F /* Splash.storyboard */,
 				2D4B485C285DD46A00F0847F /* SplashViewController.swift */,
 				9B2513F228747FC9004C3D89 /* Main */,
+				9BD3B6D62885A6DE00826836 /* Board */,
 				9B2513F128747FA3004C3D89 /* Auth */,
 			);
 			path = Views;
@@ -250,6 +268,28 @@
 			path = Item;
 			sourceTree = "<group>";
 		};
+		9BD3B6D62885A6DE00826836 /* Board */ = {
+			isa = PBXGroup;
+			children = (
+				9BD3B6D72885A6FF00826836 /* BoardDetail.storyboard */,
+				9BD3B6D92885A70E00826836 /* BoardDetailViewController.swift */,
+				9BD3B6DB2885A75500826836 /* NewPost.storyboard */,
+				9BD3B6DD2885A76600826836 /* NewPostViewController.swift */,
+				9BD3B6E42885A7BF00826836 /* CategoryList.storyboard */,
+				9BD3B6E62885A7CA00826836 /* CategoryListView.swift */,
+			);
+			path = Board;
+			sourceTree = "<group>";
+		};
+		9BD3B6DF2885A77000826836 /* Board */ = {
+			isa = PBXGroup;
+			children = (
+				9BD3B6E02885A78900826836 /* BoardDetail.swift */,
+				9BD3B6E22885A79B00826836 /* NewPost.swift */,
+			);
+			path = Board;
+			sourceTree = "<group>";
+		};
 		CE0E9172C5D37EB531B082E4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -318,10 +358,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BD3B6D82885A6FF00826836 /* BoardDetail.storyboard in Resources */,
+				9BD3B6DC2885A75500826836 /* NewPost.storyboard in Resources */,
 				9B78FFB028731B0A00F4677D /* Sign.storyboard in Resources */,
 				9BD3B6D5287F1BD800826836 /* BoadListCell.xib in Resources */,
 				9B78FFC02874422800F4677D /* MainTab.storyboard in Resources */,
 				2D4B483D285DB1B800F0847F /* LaunchScreen.storyboard in Resources */,
+				9BD3B6E52885A7BF00826836 /* CategoryList.storyboard in Resources */,
 				9BD3B6CE287C50A900826836 /* MainList.storyboard in Resources */,
 				2D4B483A285DB1B800F0847F /* Assets.xcassets in Resources */,
 				2D4B4835285DB1AC00F0847F /* Splash.storyboard in Resources */,
@@ -377,6 +420,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BD3B6E32885A79B00826836 /* NewPost.swift in Sources */,
 				9B78FFC228746B7900F4677D /* MainTabViewController.swift in Sources */,
 				9B78FFB328731CE000F4677D /* UserData.swift in Sources */,
 				9B78FFBE2874419200F4677D /* APIUser.swift in Sources */,
@@ -388,6 +432,7 @@
 				2D4B4838285DB1AC00F0847F /* board_ios.xcdatamodeld in Sources */,
 				2D4B484D285DC5E000F0847F /* APIConfig.swift in Sources */,
 				9B78FFC82874728B00F4677D /* SignUpViewController.swift in Sources */,
+				9BD3B6E12885A78900826836 /* BoardDetail.swift in Sources */,
 				2D4B4832285DB1AC00F0847F /* ViewController.swift in Sources */,
 				2D4B4855285DC89100F0847F /* BaseViewController.swift in Sources */,
 				9B78FFB928733E2D00F4677D /* APIContant.swift in Sources */,
@@ -396,9 +441,12 @@
 				9B78FFB52873226A00F4677D /* SignInViewController.swift in Sources */,
 				2D4B4830285DB1AC00F0847F /* SceneDelegate.swift in Sources */,
 				9BD3B6CC287C4FC300826836 /* MainList.swift in Sources */,
+				9BD3B6DE2885A76600826836 /* NewPostViewController.swift in Sources */,
 				2D4B485D285DD46A00F0847F /* SplashViewController.swift in Sources */,
 				9B78FFC428746B8D00F4677D /* MainListViewController.swift in Sources */,
+				9BD3B6E72885A7CA00826836 /* CategoryListView.swift in Sources */,
 				9B78FFAA2872FD8800F4677D /* Splash.swift in Sources */,
+				9BD3B6DA2885A70E00826836 /* BoardDetailViewController.swift in Sources */,
 				9BD3B6D3287EFED800826836 /* BoardListCell.swift in Sources */,
 				9BD3B6C9287979CA00826836 /* APIBoard.swift in Sources */,
 				9B78FFAC2873069D00F4677D /* Contract.swift in Sources */,

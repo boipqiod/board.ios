@@ -18,13 +18,8 @@ class BoardListCell: UITableViewCell{
 
     
     class func register(_ tableView: UITableView){
-        
-        print("asdasdasdasd \(String(describing: BoardListCell.self))")
-        
         let nib = UINib(nibName: String(describing: BoardListCell.self), bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "cell")
-        
-        print("asdasdasd")
     }
     
     func setListData(_ response: BoardListResponse.boardList?){
@@ -33,14 +28,12 @@ class BoardListCell: UITableViewCell{
             return
         }
         
-        print(response!.title)
-        
-        let title: String = response!.title
-        
-        self.Title.text! = title
-//        self.content.text
+        self.Title.text! = response!.title
+        self.content.text = response?.content
         self.nickName.text! = response!.nickName
         self.views.text! = String(describing: response!.views)
+        
+        self.date.text = response?.date
         
 //        let date = response?.date
 //        self.date.text = DateFormatter().string(from: date!)
