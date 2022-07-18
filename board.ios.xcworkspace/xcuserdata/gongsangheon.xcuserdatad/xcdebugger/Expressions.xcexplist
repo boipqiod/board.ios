@@ -17,6 +17,14 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "BoardListCell.setListData(_:):BoardListCell.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "Title">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "closure #1 in API.test():APICommon.swift">
          <PersistentStrings>
             <PersistentString

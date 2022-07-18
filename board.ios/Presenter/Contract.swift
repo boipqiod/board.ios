@@ -69,3 +69,26 @@ protocol SignUpView: BaseView{
     
     var presenter: SignUpContract.Presenter? { get set }
 }
+
+
+/**
+ 메인화면
+ */
+struct MainListContract{
+    typealias View = MainListView
+    typealias Presenter = MainListPresenter
+}
+
+protocol MainListPresenter: BasePresenter{
+    
+    func requestMainList(page: Int)
+    
+    var view: MainListContract.View? { get set }
+}
+protocol MainListView: BaseView{
+    
+    func responseMainList(response: BoardListResponse)
+    func setFailList()
+    
+    var presenter: MainListPresenter? { get set }
+}

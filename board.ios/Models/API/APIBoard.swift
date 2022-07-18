@@ -16,7 +16,6 @@ extension API{
         params["pageNo"] = pageNo
         params["numsOfPages"] = numsOfPages
         params["category"] = category
-
         
         request(APIConstant.share.GET_BOARD_LIST, params) { (response:BoardListResponse) in
             completion(response)
