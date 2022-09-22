@@ -92,3 +92,37 @@ protocol MainListView: BaseView{
     
     var presenter: MainListPresenter? { get set }
 }
+
+
+/**
+ detail
+ */
+struct BoardDetailContract{
+    typealias View = BoardDetailView
+    typealias Presenter = BoardDetailPresenter
+}
+
+protocol BoardDetailPresenter: BasePresenter{
+    
+    func requestDetail(BoardId: Int)
+    
+    var view: BoardDetailContract.View? { get set }
+}
+protocol BoardDetailView: BaseView{
+    
+    func responseDetail(response: BoardDetailResponse)
+    
+    var presenter: BoardDetailPresenter? { get set }
+}
+
+
+protocol NewPostContract{
+    typealias Presenter = NewPonstPresenter
+    typealias View = NewPonstView
+}
+protocol NewPonstPresenter: BasePresenter{
+    func requsetAddPost(title: String, content: String, userId: Int, category: String)
+}
+protocol NewPonstView: BaseView{
+    func responseAddPost(isSuccess: Bool)
+}

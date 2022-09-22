@@ -31,7 +31,7 @@ class SignUpViewController: BaseViewController, SignUpContract.View {
     var isEqules:Bool = false
     
     override func viewDidLoad() {
-        SignUpImlp.setView(self)
+        SignUpImpl.setView(self)
         
         emailInput.keyboardType = .emailAddress
     }

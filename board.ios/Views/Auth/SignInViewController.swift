@@ -15,7 +15,7 @@ class SignInViewController: BaseViewController, SignInContract.View{
     var presenter: SignInContract.Presenter?
     
     override func viewDidLoad() {
-        SignInImlp.setView(self)
+        SignInImpl.setView(self)
         
         //네비게이션바 삭제
         self.navigationController?.navigationBar.isHidden = true

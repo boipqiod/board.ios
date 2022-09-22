@@ -9,7 +9,7 @@ import Foundation
 
 class UserData{
     
-    static let share = UserData()
+    static let shared = UserData()
     
     var isSignin: Bool {
         get{

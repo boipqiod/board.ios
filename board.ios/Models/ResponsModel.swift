@@ -7,23 +7,28 @@
 
 import Foundation
 
-struct APIResponse<T :Codable>: Codable{
-    var responseCode: Int
-    var responseMsg: String
-    var data: T?
+
+
+protocol APIResponse: Codable{
+    var responseCode: Int { get }
+    var responseMsg: String { get }
+}
+
+class BaseResponse{
+    var data: APIResponse!
     
-    func isSuccess() -> Bool{
-        if self.responseCode == 200 { return true }
-        else { return false }
+    func isSucess() -> Bool{
+        return data?.responseCode == 200
     }
 }
 
-struct BaseResponse: Codable{
+struct AnyResponse: APIResponse{
     let responseCode: Int
     let responseMsg: String
 }
 
-struct SignInResponse: Codable{
+
+struct SignInResponse: APIResponse{
     let responseCode: Int
     let responseMsg: String
     let userInfo: userInfo?
@@ -36,31 +41,53 @@ struct SignInResponse: Codable{
     }
 }
 
-struct SignUpResponse: Codable{
+struct SignUpResponse: APIResponse{
     let responseCode: Int
     let responseMsg: String
     let userId: Int?
 }
 
-struct uid4NickNameRsponse: Codable{
+struct uid4NickNameRsponse: APIResponse{
     let responseCode: Int
     let responseMsg: String
     
 }
 
-struct BoardListResponse: Codable{
+struct BoardListResponse: APIResponse{
     let responseCode: Int
     let responseMsg: String
     let boardList: [boardList]?
     
     struct boardList: Codable{
-        let boardId: Int
-        let title: String
-        let content: String
-        let category: String
-        let nickName: String
-        let date: String
-        let views: Int
-        let commentCount: Int
+        let boardId: Int?
+        let title: String?
+        let content: String?
+        let category: String?
+        let nickName: String?
+        let date: String?
+        let views: Int?
+        let commentCount: Int?
     }
+}
+
+struct BoardDetailResponse: APIResponse{
+    let responseCode: Int
+    let responseMsg: String
+    let title: String
+    let content: String
+    let nickName: String
+    let category: String
+    let date: String
+    let commentList: [commentList]?
+}
+struct commentList:Codable {
+    let commentId: Int
+    let nickName: String
+    let date: String
+    let comment: String
+}
+struct BoardRegisterResponse: APIResponse{
+    let responseCode: Int
+    let responseMsg: String
+    let BoardId: Int?
 }

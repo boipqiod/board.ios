@@ -7,7 +7,7 @@
 
 import Foundation
 
-class SignInImlp: SignInContract.Presenter{
+class SignInImpl: SignInContract.Presenter{
     
     var view: SignInContract.View?
     
@@ -19,10 +19,10 @@ class SignInImlp: SignInContract.Presenter{
 
             if response.responseCode == 200{
                 
-                UserData.share.uid = response.userInfo?.userId
-                UserData.share.email = response.userInfo?.email
-                UserData.share.name = response.userInfo?.name
-                UserData.share.nickNmae = response.userInfo?.nickName
+                UserData.shared.uid = response.userInfo?.userId
+                UserData.shared.email = response.userInfo?.email
+                UserData.shared.name = response.userInfo?.name
+                UserData.shared.nickNmae = response.userInfo?.nickName
                 
                 self.view?.responseSignIn(success: true)
             }else{
@@ -32,9 +32,9 @@ class SignInImlp: SignInContract.Presenter{
     }
 }
 
-extension SignInImlp{
+extension SignInImpl{
     static func setView(_ view: BaseView) {
-        let presenter = SignInImlp()
+        let presenter = SignInImpl()
         presenter.view = view as? SignInContract.View
         view.setPresenter(presenter as BasePresenter)
     }

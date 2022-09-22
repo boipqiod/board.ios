@@ -39,7 +39,7 @@
 		9BD3B6CE287C50A900826836 /* MainList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BD3B6CD287C50A900826836 /* MainList.storyboard */; };
 		9BD3B6D3287EFED800826836 /* BoardListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD3B6D2287EFED800826836 /* BoardListCell.swift */; };
 		9BD3B6D5287F1BD800826836 /* BoadListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BD3B6D0287C69C500826836 /* BoadListCell.xib */; };
-		9BD3B6D82885A6FF00826836 /* BoardDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BD3B6D72885A6FF00826836 /* BoardDetail.storyboard */; };
+		9BD3B6D82885A6FF00826836 /* BaordDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BD3B6D72885A6FF00826836 /* BaordDetail.storyboard */; };
 		9BD3B6DA2885A70E00826836 /* BoardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD3B6D92885A70E00826836 /* BoardDetailViewController.swift */; };
 		9BD3B6DC2885A75500826836 /* NewPost.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BD3B6DB2885A75500826836 /* NewPost.storyboard */; };
 		9BD3B6DE2885A76600826836 /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD3B6DD2885A76600826836 /* NewPostViewController.swift */; };
@@ -87,7 +87,7 @@
 		9BD3B6CD287C50A900826836 /* MainList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainList.storyboard; sourceTree = "<group>"; };
 		9BD3B6D0287C69C500826836 /* BoadListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BoadListCell.xib; sourceTree = "<group>"; };
 		9BD3B6D2287EFED800826836 /* BoardListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardListCell.swift; sourceTree = "<group>"; };
-		9BD3B6D72885A6FF00826836 /* BoardDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BoardDetail.storyboard; sourceTree = "<group>"; };
+		9BD3B6D72885A6FF00826836 /* BaordDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BaordDetail.storyboard; sourceTree = "<group>"; };
 		9BD3B6D92885A70E00826836 /* BoardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardDetailViewController.swift; sourceTree = "<group>"; };
 		9BD3B6DB2885A75500826836 /* NewPost.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewPost.storyboard; sourceTree = "<group>"; };
 		9BD3B6DD2885A76600826836 /* NewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
@@ -215,13 +215,11 @@
 		9B2513F228747FC9004C3D89 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				9BD3B6D0287C69C500826836 /* BoadListCell.xib */,
-				9BD3B6D2287EFED800826836 /* BoardListCell.swift */,
-				9BD3B6CF287C590A00826836 /* Item */,
 				9B78FFBF2874422800F4677D /* MainTab.storyboard */,
 				9B78FFC128746B7900F4677D /* MainTabViewController.swift */,
 				9B78FFC328746B8D00F4677D /* MainListViewController.swift */,
 				9BD3B6CD287C50A900826836 /* MainList.storyboard */,
+				9BD3B6CF287C590A00826836 /* Item */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -264,6 +262,8 @@
 		9BD3B6CF287C590A00826836 /* Item */ = {
 			isa = PBXGroup;
 			children = (
+				9BD3B6D0287C69C500826836 /* BoadListCell.xib */,
+				9BD3B6D2287EFED800826836 /* BoardListCell.swift */,
 			);
 			path = Item;
 			sourceTree = "<group>";
@@ -271,7 +271,7 @@
 		9BD3B6D62885A6DE00826836 /* Board */ = {
 			isa = PBXGroup;
 			children = (
-				9BD3B6D72885A6FF00826836 /* BoardDetail.storyboard */,
+				9BD3B6D72885A6FF00826836 /* BaordDetail.storyboard */,
 				9BD3B6D92885A70E00826836 /* BoardDetailViewController.swift */,
 				9BD3B6DB2885A75500826836 /* NewPost.storyboard */,
 				9BD3B6DD2885A76600826836 /* NewPostViewController.swift */,
@@ -358,7 +358,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BD3B6D82885A6FF00826836 /* BoardDetail.storyboard in Resources */,
+				9BD3B6D82885A6FF00826836 /* BaordDetail.storyboard in Resources */,
 				9BD3B6DC2885A75500826836 /* NewPost.storyboard in Resources */,
 				9B78FFB028731B0A00F4677D /* Sign.storyboard in Resources */,
 				9BD3B6D5287F1BD800826836 /* BoadListCell.xib in Resources */,

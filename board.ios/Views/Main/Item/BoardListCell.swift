@@ -15,7 +15,9 @@ class BoardListCell: UITableViewCell{
     @IBOutlet weak var nickName: UILabel!
     @IBOutlet weak var views: UILabel!
     @IBOutlet weak var date: UILabel!
-
+    @IBOutlet weak var comments: UILabel!
+    
+    var response: BoardListResponse.boardList?
     
     class func register(_ tableView: UITableView){
         let nib = UINib(nibName: String(describing: BoardListCell.self), bundle: nil)
@@ -28,14 +30,15 @@ class BoardListCell: UITableViewCell{
             return
         }
         
-        self.Title.text! = response!.title
+        self.response = response
+        
+        self.Title.text = response?.title
         self.content.text = response?.content
-        self.nickName.text! = response!.nickName
-        self.views.text! = String(describing: response!.views)
+        self.nickName.text = response?.nickName
+        self.views.text! = String(describing: response!.views!)
+        self.comments.text! = "(\(String(describing: response!.commentCount!)))"
         
         self.date.text = response?.date
         
-//        let date = response?.date
-//        self.date.text = DateFormatter().string(from: date!)
     }
 }

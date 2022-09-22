@@ -7,7 +7,7 @@
 
 import Foundation
 
-class SignUpImlp: SignUpContract.Presenter{
+class SignUpImpl: SignUpContract.Presenter{
     
     var view: SignUpContract.View?
     
@@ -19,22 +19,22 @@ class SignUpImlp: SignUpContract.Presenter{
     }
     
     func checkEmail(email: String, _ completion: @escaping (Bool) -> Void) {
-        API.share.checkEamil(email: email) { (response:BaseResponse) in
+        API.share.checkEamil(email: email) { (response:AnyResponse) in
             completion(response.responseCode == 200)
         }
     }
     
     func checkNickName(nickName: String, _ completion: @escaping (Bool) -> Void) {
-        API.share.checkNickName(nickName: nickName) { (response:BaseResponse) in
+        API.share.checkNickName(nickName: nickName) { (response:AnyResponse) in
             completion(response.responseCode == 200)
         }
     }
     
 }
 
-extension SignUpImlp{
+extension SignUpImpl{
     static func setView(_ view: BaseView) {
-        let presenter = SignUpImlp()
+        let presenter = SignUpImpl()
         presenter.view = view as? SignUpContract.View
         view.setPresenter(presenter)
     }

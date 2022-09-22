@@ -17,10 +17,29 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "BoardDetailViewController.responseDetail(response:):BoardDetailViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "commentList">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "BoardDetailViewController.tableView(_:numberOfRowsInSection:):BoardDetailViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "commentList">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "BoardListCell.setListData(_:):BoardListCell.swift">
          <PersistentStrings>
             <PersistentString
                value = "Title">
+            </PersistentString>
+            <PersistentString
+               value = "self.views.text">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -32,6 +51,17 @@
             </PersistentString>
             <PersistentString
                value = "response.data">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "commentCell.setComment(commentList:):BoardDetailViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "commentTitle">
+            </PersistentString>
+            <PersistentString
+               value = "commentList.nickName">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

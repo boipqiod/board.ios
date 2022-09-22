@@ -23,5 +23,28 @@ extension API{
         
     }
     
+    func getBoardDetail(boardID: Int, completion: @escaping (BoardDetailResponse)-> Void){
+        
+        var params:[String : Any] = [:]
+
+        params["boardId"] = boardID
+        
+        request(APIConstant.share.GET_BOARD_DETAIL, params) { (response: BoardDetailResponse) in
+            completion(response)
+        }
+    }
     
+    func registerBoard(title: String, content: String, userId: Int, category: String, completion: @escaping (BoardRegisterResponse)-> Void){
+        
+        var params:[String : Any] = [:]
+
+        params["title"] = title
+        params["content"] = content
+        params["userId"] = userId
+        params["category"] = category
+
+        request(APIConstant.share.REGISTER_BOARD, params) { (response: BoardRegisterResponse) in
+            completion(response)
+        }
+    }
 }

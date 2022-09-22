@@ -7,7 +7,7 @@ class SplashViewController: BaseViewController, SplashContract.View{
     var presenter: SplashContract.Presenter!
     
     override func viewDidLoad() {
-        SplashImlp.setView(self)
+        SplashImpl.setView(self)
     }
     
     override func viewWillAppear(_ animated: Bool) {

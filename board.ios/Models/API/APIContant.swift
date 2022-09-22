@@ -21,6 +21,8 @@ class APIConstant{
     
     //게시글 관련
     let GET_BOARD_LIST = (URL: APIConfig.baseUrl + "/board/categoryList", Method: HTTPMethod.get)
+    let GET_BOARD_DETAIL = (URL: APIConfig.baseUrl + "/board/detailBoard", Method: HTTPMethod.get)
+
     let REGISTER_BOARD = (URL: APIConfig.baseUrl + "/board/registerBoard", Method: HTTPMethod.post)
     //댓글 관련
 }

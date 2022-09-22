@@ -7,7 +7,7 @@
 
 import Foundation
 
-class MainListImlp: MainListContract.Presenter{
+class MainListImpl: MainListContract.Presenter{
 
     var view: MainListContract.View?
     
@@ -24,9 +24,9 @@ class MainListImlp: MainListContract.Presenter{
     }
 }
 
-extension MainListImlp{
+extension MainListImpl{
     static func setView(_ view: BaseView) {
-        let presenter = MainListImlp()
+        let presenter = MainListImpl()
         presenter.view = view as? MainListContract.View
         view.setPresenter(presenter)
     }

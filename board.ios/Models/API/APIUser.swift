@@ -35,22 +35,22 @@ extension API{
 
     }
     
-    func checkEamil(email: String, _ completion: @escaping (BaseResponse) -> Void){
+    func checkEamil(email: String, _ completion: @escaping (AnyResponse) -> Void){
         var params:[String : Any] = [:]
         
         params["email"] = email
         
-        request(APIConstant.share.USER_CHECK_EMAIL, params) { (response:BaseResponse) in
+        request(APIConstant.share.USER_CHECK_EMAIL, params) { (response:AnyResponse) in
             completion(response)
         }
     }
     
-    func checkNickName(nickName: String, _ completion: @escaping (BaseResponse) -> Void){
+    func checkNickName(nickName: String, _ completion: @escaping (AnyResponse) -> Void){
         var params:[String : Any] = [:]
         
         params["nickName"] = nickName
         
-        request(APIConstant.share.USER_CHECK_NICKNAME, params) { (response:BaseResponse) in
+        request(APIConstant.share.USER_CHECK_NICKNAME, params) { (response:AnyResponse) in
             completion(response)
         }
     }

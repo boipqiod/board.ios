@@ -14,13 +14,21 @@ class MainListViewController: BaseViewController, MainListContract.View{
     var respnse: BoardListResponse?
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
-        MainListImlp.setView(self)
+        MainListImpl.setView(self)
         presenter?.requestMainList(page: 1)
     }
     func responseMainList(response: BoardListResponse) {
         self.respnse = response
-        
         self.tableView.reloadData()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        tableView.reloadData()
+    }
+    
+    
+    @IBAction func toAdd(_ sender: Any) {
+        NewPostViewController.show(self)
     }
     
     func setFailList() {
@@ -37,14 +45,22 @@ extension MainListViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "BoardListCell", for: indexPath) as? BoardListCell
+        
         cell?.setListData(respnse?.boardList?[indexPath.row])
-
-//        print(cell?.Title)
         
         return cell ?? UITableViewCell()
     }
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at: indexPath) as! BoardListCell
+        
+        let sb = UIStoryboard(name: "BaordDetail", bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier: "BaordDetail")  as! BoardDetailViewController
+        
+        vc.boardId = cell.response?.boardId
+        
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
 extension MainListViewController{
